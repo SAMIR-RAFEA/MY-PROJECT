@@ -1,0 +1,172 @@
+/* A pre-set font from google APIs  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* TASK 1: Define Global CSS Variables */
+/* - Create a :root selector.
+   - Define a global variable named "--main-blue" and set it to #3a6cf4.
+*/
+/* [WRITE CODE BELOW] */
+:root{
+    --main-blue: #3a6cf4;
+    --green-black: #591a1a;
+    --red-green:#cd3a3a;
+}
+
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ;
+}
+
+.logo{
+    text-decoration: none;
+    /* TASK 2: Use the Global Variable */
+    /* Replace the hardcoded color #3a6cf4 with your variable var(--main-blue) */
+    color: var(--main-blue);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    /* TASK 3: Use the Global Variable */
+    /* Replace the hardcoded color #3a6cf4 with your variable */
+    color: var(--main-blue);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color:#2311;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(https://img.freepik.com/premium-vector/cute-little-kid-use-computer-study-internet_97632-7322.jpg?w=2000) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.main h2 {
+    color: var(--red-green);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #fff;
+    --main-blue: black;
+    /* TASK 4: Use the Global Variable for background-color */
+    background-color: var(--main-blue);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: var(--main-blue);
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+/* TASK 5: Define a Local CSS Variable */
+.cards{
+    /* Define a local variable named "--main-blue" inside .cards and set it to #3a6cf4 */
+    /* [WRITE CODE BELOW] */
+    --main-blue: rgb(255, 0, 0);
+    color : var(--main-blue);
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    /* TASK 6: Use the Variable */
+    /* Use the variable here */
+    color: var(--main-blue);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    /* TASK 7: Use the Variable */
+    /* Use the variable for the icon color */
+    color: var(--main-blue);
+    font-size: 8em;
+    text-align: center;
+}
